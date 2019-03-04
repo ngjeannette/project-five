@@ -438,7 +438,8 @@ label {
 }
 
 input[type="radio"] {
-  visibility: hidden;
+  opacity: 0;
+  position: absolute;
 }
 
 input#lightGreen {
@@ -465,6 +466,11 @@ label {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  margin-right: 15px;
+}
+
+label:last-child {
+  margin-right: 0;
 }
 
 input[type="radio"]:checked+label {
