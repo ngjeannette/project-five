@@ -493,12 +493,12 @@ input#purple:checked:after {
 
 input#lightGreen::after,
 input#lightGreen:checked:after {
-  background: green;
+  background: #a9dc76;
 }
 
 input#PaleVioletRed::after,
 input#PaleVioletRed:checked:after {
-  background: palevioletred;
+  background: #ea5d86;
 }
 
 input#lightGreen {
@@ -510,10 +510,10 @@ input#lightGreen {
 }
 
 .green {
-  background: lightgreen;
+  background: #a9dc76;
   margin-right: 0;
 }
 
 .palevioletred {
-  background: palevioletred;
+  background: #ea5d86;
 }
