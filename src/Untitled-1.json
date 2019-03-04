@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "id1": {
+      "name": jeanette,
+      "content": hi
+    },
+    "id2": {
+      "name": chun,
+      "content": hi
+    }
+  }
+}
