@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jeannette_ng_project5/precache-manifest.e24dbbbe1bd458d45844b6d04722b085.js"
+  "/project-five/precache-manifest.e6a47942e91ffc7a34aee0e1da7d61bf.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/jeannette_ng_project5/index.html", {
+workbox.routing.registerNavigationRoute("/project-five/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
