@@ -1,29 +1,4 @@
-.App {
-  text-align: left;
-  height: 100vh;
-  background: rgb(43, 40, 45);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
+//setup
 article,
 aside,
 details,
@@ -238,6 +213,32 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
+.App {
+  text-align: left;
+  height: 100vh;
+  background: rgb(43, 40, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .header {
   min-height: 10vh;
   display: flex;
@@ -263,11 +264,8 @@ input::-moz-focus-inner {
 }
 
 .chatMessages {
-  /* vertical-align: bottom;
-  display: flex;
-  flex-direction: column; */
   overflow: scroll;
-  max-height: 70vh;
+  max-height: 63vh;
   border: 1px solid white;
   padding: 5px;
   border-top-right-radius: 10px;
@@ -282,17 +280,9 @@ input::-moz-focus-inner {
 }
 
 .chatmessages {
-  /* overflow: auto; */
   bottom: 0;
   width: 97%;
   margin: 0 auto;
-}
-
-#chatmessages {
-  border: 1px solid #e2e4e3;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 10px;
 }
 
 .name {
@@ -436,12 +426,8 @@ img {
   width: 13%;
 }
 
-/* label container */
-
 .themeColorSelection {
   display: flex;
-  /* width: 80%;
-  flex-wrap: wrap; */
   margin-bottom: 10px;
 }
 
@@ -452,68 +438,35 @@ label {
 }
 
 input[type="radio"] {
-  margin-right: 15px;
-}
-
-input[type="radio"]:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-}
-
-input[type="radio"]:checked:after {
-  width: 20px;
-  height: 20px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  content: "";
-  display: inline-block;
-  visibility: visible;
-  /* border: 2px solid white; */
-  box-shadow: 0 0 0 1px black;
-}
-
-input#orange::after,
-input#orange:checked:after {
-  background: orange;
-}
-
-input#purple::after,
-input#purple:checked:after {
-  background: #ab9df2;
-}
-
-input#lightGreen::after,
-input#lightGreen:checked:after {
-  background: #a9dc76;
-}
-
-input#PaleVioletRed::after,
-input#PaleVioletRed:checked:after {
-  background: #ea5d86;
+  visibility: hidden;
 }
 
 input#lightGreen {
   margin-right: 0;
 }
 
-.purple {
-  background: #f6f5fa;
+label[for="orange"] {
+  background: orange;
 }
 
-.green {
+label[for="purple"] {
+  background: #ab9df2;
+}
+
+label[for="lightGreen"] {
   background: #a9dc76;
-  margin-right: 0;
 }
 
-.palevioletred {
+label[for="PaleVioletRed"] {
   background: #ea5d86;
+}
+
+label {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked+label {
+  box-shadow: 0 0 0 1px black;
 }

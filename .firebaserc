@@ -1,1 +1,6 @@
-{}
+{
+  "projects": {
+    "staging": "first-firebase-project-csj",
+    "default": "first-firebase-project-csj"
+  }
+}

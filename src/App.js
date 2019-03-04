@@ -14,14 +14,13 @@ class App extends Component {
       userInput: "",
       userMessage: "",
       userName: "",
-      placeHolder: "e.g. JeannetteNg5",
+      placeHolder: "e.g. Jeannette",
       color: "",
       theme: "rgb(43, 40, 45)",
       themeColor: { border: "white", chatMessage: "rgb(40, 44, 52)" },
       text: "Light Mode"
     };
     this.myRef = React.createRef();
-    console.log("constructor() this.myRef", this.myRef);
   }
 
   componentDidMount() {
@@ -38,7 +37,6 @@ class App extends Component {
         },
         this.scroll
       );
-      console.log(data);
     });
   }
   //handleChange it will store the information on firebase. When I'm typing, it will be added to firebase
@@ -137,43 +135,40 @@ class App extends Component {
             </div>
             <p>Select Username Color</p>
             <div className="themeColorSelection">
-              <label htmlFor="orange">
-                <input
-                  type="radio"
-                  value="#f09665"
-                  name="color"
-                  id="orange"
-                  onClick={this.handleColor}
-                  required
-                />
-              </label>
-              <label htmlFor="purple">
-                <input
-                  type="radio"
-                  value="#ab9df2"
-                  name="color"
-                  id="purple"
-                  onClick={this.handleColor}
-                />
-              </label>
-              <label htmlFor="PaleVioletRed">
-                <input
-                  type="radio"
-                  value="#ea5d86"
-                  name="color"
-                  id="PaleVioletRed"
-                  onClick={this.handleColor}
-                />
-              </label>
-              <label htmlFor="lightGreen">
-                <input
-                  type="radio"
-                  value="#a9dc76"
-                  name="color"
-                  id="lightGreen"
-                  onClick={this.handleColor}
-                />
-              </label>
+              <input
+                type="radio"
+                value="#f09665"
+                name="color"
+                id="orange"
+                onClick={this.handleColor}
+                required
+              />
+              <label htmlFor="orange" />
+              <input
+                type="radio"
+                value="#ab9df2"
+                name="color"
+                id="purple"
+                onClick={this.handleColor}
+              />
+              <label htmlFor="purple" />
+              <input
+                type="radio"
+                value="#ea5d86"
+                name="color"
+                id="PaleVioletRed"
+                onClick={this.handleColor}
+              />
+              <label htmlFor="PaleVioletRed" />
+
+              <input
+                type="radio"
+                value="#a9dc76"
+                name="color"
+                id="lightGreen"
+                onClick={this.handleColor}
+              />
+              <label htmlFor="lightGreen" />
             </div>
             <button type="submit" className="cta-1">
               <p>Let's Chat</p>
