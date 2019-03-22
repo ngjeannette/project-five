@@ -1,13 +1,13 @@
 {
-  "main.css": "/project-five/static/css/main.72153028.chunk.css",
-  "main.js": "/project-five/static/js/main.64f84f8a.chunk.js",
-  "main.js.map": "/project-five/static/js/main.64f84f8a.chunk.js.map",
+  "main.css": "/project-five/static/css/main.be5b5d0d.chunk.css",
+  "main.js": "/project-five/static/js/main.92815b43.chunk.js",
+  "main.js.map": "/project-five/static/js/main.92815b43.chunk.js.map",
   "runtime~main.js": "/project-five/static/js/runtime~main.abfb813d.js",
   "runtime~main.js.map": "/project-five/static/js/runtime~main.abfb813d.js.map",
   "static/js/2.19bea9e6.chunk.js": "/project-five/static/js/2.19bea9e6.chunk.js",
   "static/js/2.19bea9e6.chunk.js.map": "/project-five/static/js/2.19bea9e6.chunk.js.map",
   "index.html": "/project-five/index.html",
-  "precache-manifest.99929cbcd57f2c9babacb0595ef3bf4e.js": "/project-five/precache-manifest.99929cbcd57f2c9babacb0595ef3bf4e.js",
+  "precache-manifest.19a5359b8c0f7edbf860357aa705809c.js": "/project-five/precache-manifest.19a5359b8c0f7edbf860357aa705809c.js",
   "service-worker.js": "/project-five/service-worker.js",
-  "static/css/main.72153028.chunk.css.map": "/project-five/static/css/main.72153028.chunk.css.map"
+  "static/css/main.be5b5d0d.chunk.css.map": "/project-five/static/css/main.be5b5d0d.chunk.css.map"
 }
